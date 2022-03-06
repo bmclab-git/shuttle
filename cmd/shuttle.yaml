@@ -1,0 +1,94 @@
+# Version
+ver: v1.0.1
+
+General-1:
+  http-port: "8080"         #http/https port
+  socks-port: "8081"        #socks port
+  controller-port: "8082"   #dashboard port
+
+# General Settings
+General:
+  loglevel: "info"
+  dns-server:
+  - "114.114.114.114"
+  - "223.5.5.5"
+  http-port: "8080"
+  http-interface: "0.0.0.0"
+  socks-port: "8081"
+  socks-interface: "0.0.0.0"
+  controller-port: "8082"
+  controller-interface: "0.0.0.0"
+
+# Proxy Settings
+Proxy:
+  "🇯🇵JP_a": ["ss", "jp.a.example.com", "12345", "rc4-md5", "123456"]
+  "🇯🇵JP_b": ["ss", "jp.b.example.com", "12345", "rc4-md5", "123456"]
+  "🇯🇵JP_c": ["ss", "jp.c.example.com", "12345", "rc4-md5", "123456"]
+  "🇭🇰HK_a": ["ss", "hk.a.example.com", "12345", "rc4-md5", "123456"]
+  "🇭🇰HK_b": ["ss", "hk.b.example.com", "12345", "rc4-md5", "123456"]
+  "🇭🇰HK_c": ["ss", "hk.c.example.com", "12345", "rc4-md5", "123456"]
+  "🇺🇸US_a": ["ss", "us.a.example.com", "12345", "rc4-md5", "123456"]
+  "🇺🇸US_b": ["ss", "us.b.example.com", "12345", "rc4-md5", "123456"]
+  "🇺🇸US_c": ["ss", "hk.c.example.com", "12345", "rc4-md5", "123456"]
+  "socks": ["socks", "localhost", "12345"]
+  "socks-tls": ["socks-tls", "localhost", "12345", "skip-verify"]
+  "socks-auth": ["socks", "localhost", "12345", "user", "password"]
+  "socks-tls-auth": ["socks-tls", "localhost", "12345", "skip-verify", "user", "password"]
+
+
+# Server Group
+Proxy-Group:
+  "Auto": ["rtt", "🇭🇰HK_a", "🇭🇰HK_b", "🇭🇰HK_c", "🇯🇵JP_a", "🇯🇵JP_b", "🇯🇵JP_c", "🇺🇸US_a", "🇺🇸US_b", "🇺🇸US_c"]
+  "HK": ["select", "🇭🇰HK_a", "🇭🇰HK_b", "🇭🇰HK_c"]
+  "JP": ["select", "🇯🇵JP_a", "🇯🇵JP_b", "🇯🇵JP_c"]
+  "US": ["select", "🇺🇸US_a", "🇺🇸US_b", "🇺🇸US_c"]
+  "Proxy": ["select", "Auto", "HK", "JP", "US"]
+  "nProxy": ["select", "DIRECT"]
+
+
+# DNS
+Local-DNS:
+- ["DOMAIN", "localhost", "static", "127.0.0.1"]
+- ["DOMAIN-KEYWORD", "google", "remote", ""]
+- ["DOMAIN-SUFFIX", "baidu.com", "direct", "114.114.114.114"]
+
+
+# Request/Response Modification & URL Rewrite
+# HTTPS(turn the MitM on)
+Http-Map:
+  Req-Map: #request modification config
+    - url-rex: "^http://www.zhihu.com"
+      type: "UPDATE"
+      items:
+        - ["HEADER", "Scheme", "http"]
+  Resp-Map: #response modification config
+    - url-rex: "^http://www.zhihu.com"
+      type: "UPDATE"
+      items:
+         - ["STATUS", "", "301"]
+         - ["HEADER", "Location", "http://www.jianshu.com"]
+
+
+# MitM
+# MITM: 
+#   rules: ["*.baidu.com", "*.zhihu.com"] #Domains allowed for MitM
+#   # ca: (base64) # CA certificate and private key, no need for configuration, Shuttle will generate them automatically and store here
+#   # key: (base64)
+#   ca: "aaaaaa" # CA certificate and private key, no need for configuration, Shuttle will generate them automatically and store here
+#   key: "aaaaaa"
+
+
+# Rule Configuration
+Rule: # Proxy rules
+  - ["DOMAIN-SUFFIX", "gitlab.anjian.com", "DIRECT", ""]
+  # - [Match full domain，domain，go through Proxy group，]
+  - ["DOMAIN", "sipt.top", "Proxy", ""]
+  # - [keyword match，keyword，connection reject，]
+  - ["DOMAIN-KEYWORD", "zjtoolbar", "REJECT", ""]
+  # - [IP range match，IP range，direct connection，]
+  - ["IP-CIDR", "127.0.0.0/8", "DIRECT", ""]
+  # - [GEOIP match，China， go through nProxy group，]
+  - ["GEOIP", "CN", "nProxy", ""]
+  # - [match none of above，， go through Proxy group，]
+  - ["FINAL", "", "Proxy", ""]
+

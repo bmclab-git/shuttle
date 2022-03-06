@@ -1,0 +1,117 @@
+2022-03-06 13:13:18 [INFO] Listen to [HTTP/HTTPS]: 0.0.0.0:8080
+2022-03-06 13:13:18 [INFO] Listen to [SOCKS]: 0.0.0.0:8081
+2022-03-06 13:13:18 [INFO] [Controller] listen to:0.0.0.0:8082
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [jp.b.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [jp.a.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [us.a.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.c.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.c.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.b.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [jp.c.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [us.b.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [us.a.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.c.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [jp.a.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.b.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [us.b.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.c.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [jp.c.example.com] failed 
+2022-03-06 13:13:18 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [jp.b.example.com] failed 
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [hk.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [jp.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [hk.b.example.com] failed: resolve domain [hk.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [jp.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [us.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [hk.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [hk.c.example.com] failed: resolve domain [hk.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.c.example.com]: resolve domain [hk.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [jp.b.example.com] failed: resolve domain [jp.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.b.example.com]: resolve domain [hk.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [us.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [hk.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [hk.c.example.com] failed: resolve domain [hk.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [us.b.example.com] failed: resolve domain [us.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [Local] resolve domain [jp.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [jp.c.example.com] failed: resolve domain [jp.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [jp.c.example.com]: resolve domain [jp.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [jp.a.example.com] failed: resolve domain [jp.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [jp.a.example.com]: resolve domain [jp.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [DNS] [direct] resolve domain [us.a.example.com] failed: resolve domain [us.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [jp.b.example.com]: resolve domain [jp.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.c.example.com]: resolve domain [hk.c.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [us.b.example.com]: resolve domain [us.b.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:20 [ERROR] [SsProtocol] [Conn] Resolve domain failed [us.a.example.com]: resolve domain [us.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:32 [INFO] [DNS] [Cache] resolve [csi.gstatic.com] -> [216.239.32.3] [US]
+2022-03-06 13:13:32 [INFO] [RULE] [ID:720317709052547072] [216.239.32.3:443, csi.gstatic.com, US] rule: [FINAL, , Proxy]
+2022-03-06 13:13:32 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:32 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:34 [INFO] [DNS] [Cache] resolve [beacons.gcp.gvt2.com] -> [172.217.31.163] [US]
+2022-03-06 13:13:34 [INFO] [RULE] [ID:720317715776016384] [172.217.31.163:443, beacons.gcp.gvt2.com, US] rule: [FINAL, , Proxy]
+2022-03-06 13:13:34 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:34 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:34 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:34 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:34 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:34 [ERROR] [HTTP] [ID:720317709052547072] Connect to Server [🇭🇰HK_a] failed [216.239.32.3:443] err: dial tcp: lookup hk.a.example.com: no such host
+2022-03-06 13:13:34 [INFO] [Storage] ID:[1] Policy:[FAILED(FAILED,)] URL:[https://csi.gstatic.com:443]
+2022-03-06 13:13:34 [INFO] [DNS] [Cache] resolve [csi.gstatic.com] -> [216.239.32.3] [US]
+2022-03-06 13:13:34 [INFO] [RULE] [ID:720317717818642432] [216.239.32.3:443, csi.gstatic.com, US] rule: [FINAL, , Proxy]
+2022-03-06 13:13:34 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:34 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:36 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:36 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:36 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:36 [ERROR] [HTTP] [ID:720317715776016384] Connect to Server [🇭🇰HK_a] failed [172.217.31.163:443] err: dial tcp: lookup hk.a.example.com: no such host
+2022-03-06 13:13:36 [INFO] [Storage] ID:[2] Policy:[FAILED(FAILED,)] URL:[https://beacons.gcp.gvt2.com:443]
+2022-03-06 13:13:36 [INFO] [DNS] [Cache] resolve [beacons.gcp.gvt2.com] -> [172.217.31.163] [US]
+2022-03-06 13:13:36 [INFO] [RULE] [ID:720317724546306048] [172.217.31.163:443, beacons.gcp.gvt2.com, US] rule: [FINAL, , Proxy]
+2022-03-06 13:13:36 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:36 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:36 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:36 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:36 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:36 [ERROR] [HTTP] [ID:720317717818642432] Connect to Server [🇭🇰HK_a] failed [216.239.32.3:443] err: dial tcp: lookup hk.a.example.com: no such host
+2022-03-06 13:13:36 [INFO] [Storage] ID:[3] Policy:[FAILED(FAILED,)] URL:[https://csi.gstatic.com:443]
+2022-03-06 13:13:38 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:38 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:38 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:38 [ERROR] [HTTP] [ID:720317724546306048] Connect to Server [🇭🇰HK_a] failed [172.217.31.163:443] err: dial tcp: lookup hk.a.example.com: no such host
+2022-03-06 13:13:38 [INFO] [Storage] ID:[4] Policy:[FAILED(FAILED,)] URL:[https://beacons.gcp.gvt2.com:443]
+2022-03-06 13:13:41 [INFO] [DNS] [Cache] resolve [beacons.gvt2.com] -> [172.217.31.163] [US]
+2022-03-06 13:13:41 [INFO] [RULE] [ID:720317744234369024] [172.217.31.163:443, beacons.gvt2.com, US] rule: [FINAL, , Proxy]
+2022-03-06 13:13:41 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:41 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:42 [INFO] [DNS] [Cache] resolve [array508.prod.do.dsp.mp.microsoft.com] -> [52.184.217.37] [US]
+2022-03-06 13:13:42 [INFO] [RULE] [ID:720317749674381312] [52.184.217.37:443, array508.prod.do.dsp.mp.microsoft.com, US] rule: [FINAL, , Proxy]
+2022-03-06 13:13:42 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:42 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:43 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:43 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:43 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:43 [ERROR] [HTTP] [ID:720317744234369024] Connect to Server [🇭🇰HK_a] failed [172.217.31.163:443] err: dial tcp: lookup hk.a.example.com: no such host
+2022-03-06 13:13:43 [INFO] [Storage] ID:[5] Policy:[FAILED(FAILED,)] URL:[https://beacons.gvt2.com:443]
+2022-03-06 13:13:43 [INFO] [DNS] [Cache] resolve [beacons.gvt2.com] -> [172.217.31.163] [US]
+2022-03-06 13:13:43 [INFO] [RULE] [ID:720317753059184640] [172.217.31.163:443, beacons.gvt2.com, US] rule: [FINAL, , Proxy]
+2022-03-06 13:13:43 [ERROR] [DNS] [Local] connect [223.5.5.5:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:43 [ERROR] [DNS] [Local] connect [114.114.114.114:53] resolve domain [hk.a.example.com] failed 
+2022-03-06 13:13:44 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:44 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:44 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:44 [ERROR] [HTTP] [ID:720317749674381312] Connect to Server [🇭🇰HK_a] failed [52.184.217.37:443] err: dial tcp: lookup hk.a.example.com: no such host
+2022-03-06 13:13:44 [INFO] [Storage] ID:[6] Policy:[FAILED(FAILED,)] URL:[https://array508.prod.do.dsp.mp.microsoft.com:443]
+2022-03-06 13:13:45 [ERROR] [DNS] [Local] resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:45 [ERROR] [DNS] [direct] resolve domain [hk.a.example.com] failed: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:45 [ERROR] [SsProtocol] [Conn] Resolve domain failed [hk.a.example.com]: resolve domain [hk.a.example.com] failed: %!s(MISSING)
+2022-03-06 13:13:45 [ERROR] [HTTP] [ID:720317753059184640] Connect to Server [🇭🇰HK_a] failed [172.217.31.163:443] err: dial tcp: lookup hk.a.example.com: no such host
+2022-03-06 13:13:45 [INFO] [Storage] ID:[7] Policy:[FAILED(FAILED,)] URL:[https://beacons.gvt2.com:443]
+2022-03-06 13:13:46 [INFO] [Shuttle] is shutdown, see you later!
+2022-03-06 13:13:46 [INFO] Stopped HTTP/HTTPS Proxy goroutine...
+2022-03-06 13:13:46 [INFO] Stopped HTTP/HTTPS Proxy goroutine...
+2022-03-06 13:13:46 [INFO] close socks listener!
+2022-03-06 13:13:46 [INFO] close HTTP/HTTPS listener!
+2022-03-06 13:13:46 [INFO] Stopped Controller goroutine...
